@@ -3,7 +3,14 @@ module.exports = {
   editorconfig: true,
   printWidth: 80,
   singleQuote: true,
-  importOrder: ['<THIRD_PARTY_MODULES>', '^@(.*)$', '^[./]'],
+  semi: false,
+  importOrder: [
+    '^react',
+    '<THIRD_PARTY_MODULES>',
+    '^#public',
+    '^@(.*)$',
+    '^[./]',
+  ],
   importOrderSeparation: true,
   importOrderSortSpecifiers: true,
-};
+}
